@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-button>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" id="mialerta">Alerta</ion-button> 
+  <ion-alert
+  trigger="mialerta"
+  header="    Hola"
+  subHeader="No puedes ingresar aca"
+  message=";)"
+  [buttons]="alertButtons"> </ion-alert>
+</ion-content>
